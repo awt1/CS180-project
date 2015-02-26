@@ -5,6 +5,25 @@ At the top of the file there should be a short introduction and/ or overview tha
 
 Code Example
 
+ //This is run before a new game (also after an old game)
+    @Override
+    public void setupBeginning() {
+        //Initialise speeds
+        mBallSpeedX = 0;
+        mBallSpeedY = 0;
+
+        //Place the ball in the middle of the screen.
+        //mBall.Width() and mBall.getHeigh() gives us the height and width of the image of the ball
+        mBallX = mCanvasWidth / 2;
+        mBallY = mCanvasHeight / 2;
+    }
+
+    @Override
+    protected void doDraw(Canvas canvas) {
+        //If there isn't a canvas to draw on do nothing
+        //It is ok not understanding what is happening here
+        if(canvas == null) return;
+
 Show what the library does as concisely as possible, developers should be able to figure out how your project solves their problem by looking at the code example. Make sure the API you are showing off is obvious, and that your code is short and concise.
 
 Motivation
