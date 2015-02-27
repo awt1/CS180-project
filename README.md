@@ -31,4 +31,4 @@ Andy Tatch,
 
 Jac Jones,
 Luke Thomas,
-Jonathan BRayley,
+Jonathan Brayley,
